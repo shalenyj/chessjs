@@ -1,0 +1,93 @@
+$cell-size: 5rem;
+$black-bg:  #B58863;
+$white-bg: #F0D9B5;
+
+*{
+  padding: 0;
+  margin: 0;
+}
+
+main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  #desk {
+    display: flex;
+    flex-wrap: wrap-reverse;
+    width: calc($cell-size * 8);
+    height: calc($cell-size * 8);
+    .cell {
+      position: relative;
+      height: $cell-size;
+      width: $cell-size;
+      text-align: center;
+      &.with-chess{
+        cursor: pointer;
+        &:hover{
+          background: lightgreen;
+        }
+      }
+      &.white{
+        background:$white-bg;
+      }
+      &.black{
+        background: $black-bg;
+      }
+      .cell-index{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        font-size: 14px;
+      }
+      img{
+        height: 90%;
+      }
+    }
+  }
+
+
+
+  table {
+    border-spacing: 0;
+    tr{
+      td{
+        height: $cell-size;
+        width: $cell-size;
+        text-align: center;
+        &.has-item{
+          cursor: pointer;
+        }
+        &.active{
+          background: green !important;
+        }
+        img{
+          height: 95%;
+        }
+      }
+      &.row{
+        &:nth-child(odd){
+          td.cell{
+            &:nth-child(even){
+              background: $black-bg;
+            }
+            &:nth-child(odd){
+              background: $white-bg;
+            }
+          }
+        }
+        &:nth-child(even){
+          td.cell{
+            &:nth-child(even){
+              background: $white-bg;
+            }
+            &:nth-child(odd){
+              background: $black-bg;
+            }
+          }
+        }
+      }
+    }
+  }
+}

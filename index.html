@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Шахи</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+  <div id="desk">
+
+  </div>
+  <!-- <table>
+    <tr class="captions"><td></td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td></tr>
+    <tr class="row">
+      <td class="row-numbers">1</td>
+      <td class="cell has-item" data-row="0" data-color="WHITE" data-type="ROCK"><img src="images/white/rock.svg" alt="White Rock"></td>
+      <td class="cell has-item" data-row="0" data-color="WHITE" data-type="KNIGHT"><img src="images/white/knight.svg" alt="White Knight"></td>
+      <td class="cell has-item" data-row="0" data-color="WHITE" data-type="BISHOP"><img src="images/white/bishop.svg" alt="White Bishop"></td>
+      <td class="cell has-item" data-row="0" data-color="WHITE" data-type="KING"><img src="images/white/king.svg" alt="White King"></td>
+      <td class="cell has-item" data-row="0" data-color="WHITE" data-type="QUEEN"><img src="images/white/queen.svg" alt="White Queen"></td>
+      <td class="cell has-item" data-row="0" data-color="WHITE" data-type="BISHOP"><img src="images/white/bishop.svg" alt="White Bishop"></td>
+      <td class="cell has-item" data-row="0" data-color="WHITE" data-type="KNIGHT"><img src="images/white/knight.svg" alt="White Knight"></td>
+      <td class="cell has-item" data-row="0" data-color="WHITE" data-type="ROCK"><img src="images/white/rock.svg" alt="White Rock"></td>
+      <td class="row-numbers">8</td>
+    </tr>
+    <tr class="row">
+      <td class="row-numbers">2</td>
+      <td class="cell has-item" data-row="1" data-color="WHITE" data-type="PAWN"><img src="images/white/pawn.svg" alt="White Pawn"></td>
+      <td class="cell has-item" data-row="1" data-color="WHITE" data-type="PAWN"><img src="images/white/pawn.svg" alt="White Pawn"></td>
+      <td class="cell has-item" data-row="1" data-color="WHITE" data-type="PAWN"><img src="images/white/pawn.svg" alt="White Pawn"></td>
+      <td class="cell has-item" data-row="1" data-color="WHITE" data-type="PAWN"><img src="images/white/pawn.svg" alt="White Pawn"></td>
+      <td class="cell has-item" data-row="1" data-color="WHITE" data-type="PAWN"><img src="images/white/pawn.svg" alt="White Pawn"></td>
+      <td class="cell has-item" data-row="1" data-color="WHITE" data-type="PAWN"><img src="images/white/pawn.svg" alt="White Pawn"></td>
+      <td class="cell has-item" data-row="1" data-color="WHITE" data-type="PAWN"><img src="images/white/pawn.svg" alt="White Pawn"></td>
+      <td class="cell has-item" data-row="1" data-color="WHITE" data-type="PAWN"><img src="images/white/pawn.svg" alt="White Pawn"></td>
+      <td class="row-numbers">7</td>
+    </tr>
+    <tr class="row">
+      <td class="row-numbers">3</td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="row-numbers">6</td>
+    </tr>
+    <tr class="row">
+      <td class="row-numbers">4</td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="row-numbers">5</td>
+    </tr>
+    <tr class="row">
+      <td class="row-numbers">5</td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="row-numbers">4</td>
+    </tr>
+    <tr class="row">
+      <td class="row-numbers">6</td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="cell"></td>
+      <td class="row-numbers">3</td>
+    </tr>
+    <tr class="row">
+      <td class="row-numbers">7</td>
+      <td class="cell has-item" data-color="BLACK" data-type="PAWN"><img src="с" alt="Black Pawn"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="PAWN"><img src="images/black/pawn.svg" alt="Black Pawn"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="PAWN"><img src="images/black/pawn.svg" alt="Black Pawn"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="PAWN"><img src="images/black/pawn.svg" alt="Black Pawn"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="PAWN"><img src="images/black/pawn.svg" alt="Black Pawn"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="PAWN"><img src="images/black/pawn.svg" alt="Black Pawn"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="PAWN"><img src="images/black/pawn.svg" alt="Black Pawn"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="PAWN"><img src="images/black/pawn.svg" alt="Black Pawn"></td>
+      <td class="row-numbers">2</td>
+    </tr>
+    <tr class="row">
+      <td>8</td>
+      <td class="cell has-item" data-color="BLACK" data-type="ROCK"><img src="images/black/rock.svg" alt="Black Rock"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="KNIGHT"><img src="images/black/knight.svg" alt="Black Knight"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="BISHOP"><img src="images/black/bishop.svg" alt="Black Bishop"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="KING"><img src="images/black/king.svg" alt="Black King"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="QUEEN"><img src="images/black/queen.svg" alt="Black Queen"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="BISHOP"><img src="images/black/bishop.svg" alt="Black Bishop"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="KNIGHT"><img src="images/black/knight.svg" alt="Black Knight"></td>
+      <td class="cell has-item" data-color="BLACK" data-type="ROCK"><img src="images/black/rock.svg" alt="Black Rock"></td>
+      <td class="row-numbers">1</td>
+    </tr>
+    <tr class="captions"><td></td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td></tr>
+  </table> -->
+</main>
+  <script src="js/main.js" type="module"></script>
+</body>
+</html>

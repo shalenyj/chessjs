@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #desk {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  width: 40rem;
+  height: 40rem;
+}
+main #desk .cell {
+  position: relative;
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+}
+main #desk .cell.with-chess {
+  cursor: pointer;
+}
+main #desk .cell.with-chess:hover {
+  background: lightgreen;
+}
+main #desk .cell.white {
+  background: #F0D9B5;
+}
+main #desk .cell.black {
+  background: #B58863;
+}
+main #desk .cell .cell-index {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 14px;
+}
+main #desk .cell img {
+  height: 90%;
+}
+main table {
+  border-spacing: 0;
+}
+main table tr td {
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+}
+main table tr td.has-item {
+  cursor: pointer;
+}
+main table tr td.active {
+  background: green !important;
+}
+main table tr td img {
+  height: 95%;
+}
+main table tr.row:nth-child(odd) td.cell:nth-child(even) {
+  background: #B58863;
+}
+main table tr.row:nth-child(odd) td.cell:nth-child(odd) {
+  background: #F0D9B5;
+}
+main table tr.row:nth-child(even) td.cell:nth-child(even) {
+  background: #F0D9B5;
+}
+main table tr.row:nth-child(even) td.cell:nth-child(odd) {
+  background: #B58863;
+}
+
+/*# sourceMappingURL=style.css.map */
